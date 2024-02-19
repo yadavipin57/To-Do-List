@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cascadia Code', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode',
+      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    color: #002765;
+  }
+  
+  .todo-container {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  .todo-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .todo-logo {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .todo-logo i {
+    padding-right: 8px;
+    font-size: 28px;
+  }
+  
+  .task-content form {
+    margin: 12px 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  input {
+    flex-grow: 1;
+    /* Above line takes the full remaining width  */
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  
+  .reset {
+    padding: 4px;
+  }
+  
+  button,
+  input[type='submit'] {
+    background-color: #ff5945;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Styling the added task */
+  
+  .new-task {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-circle,
+  .edit-button,
+  .delete-button {
+    padding: 3px;
+    cursor: pointer;
+    width: 25px;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    transition: 0.1s ease;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #dcdcdc;
+    border-radius: 50%;
+  }
+  
